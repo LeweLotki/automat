@@ -287,6 +287,7 @@ printf("suma jest rowna: %.2f \n",suma);
 printf("Kupiles %s \n", produkt[sym].nazwa);
 printf("Stan twojego konta \n");
 reszta=suma-produkt[sym].cena;
+produkt[sym].ilosc=produkt[sym].ilosc-1;
 klient_monety();
 return reszta; 
 }
